@@ -1,39 +1,15 @@
-using Imc.Maui.Models;
+using Imc.Maui.ViewModels;
 
-namespace Imc.Maui.Views;
-
-public partial class MainPage : ContentPage
+namespace Imc.Maui.Views
 {
-    public MainPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-        imcLabel.Text = string.Empty;
-        EstadoNutricional.Text = string.Empty;
-    }
-
-    private async void OnCalcularButtonClicked(object sender, EventArgs e)
-    {
-        try
+        public MainPage()
         {
-            decimal peso = decimal.Parse(pesoEntry.Text);
-            decimal estatura = decimal.Parse(estaturaEntry.Text);
+            InitializeComponent();
 
-            decimal imc = CalculadoraImc.CalcularImc(peso, estatura);
-
-            imcLabel.Text = imc.ToString("F2");
-            EstadoNutricional.Text = CalculadoraImc.ObtenerEstadoNutricional(imc);
+            
+            BindingContext = new MainViewModel();
         }
-        catch (Exception)
-        {
-            throw;
-        }
-    }
-
-    private void OnLimpiarButtonClicked(object sender, EventArgs e)
-    {
-        pesoEntry.Text = string.Empty;
-        estaturaEntry.Text = string.Empty;
-        imcLabel.Text = string.Empty;
-        EstadoNutricional.Text = string.Empty;
     }
 }
