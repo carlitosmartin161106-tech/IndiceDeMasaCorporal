@@ -1,2 +1,2 @@
-Imc es una aplicacion .NET MAUI que calcula el indice de masa corporal de una persona y su estado nutricional.
+Tip Calculator es una aplicación .NET MAUI que te permite calcular la propina de un consumo compartido entre un numero de personas
 
