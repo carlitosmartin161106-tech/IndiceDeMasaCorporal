@@ -1,4 +1,4 @@
-namespace Imc.Maui.Models
+namespace Imc.Models
 {
     public static class CalculadoraImc
     {

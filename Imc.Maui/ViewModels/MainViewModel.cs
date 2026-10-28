@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Imc.Maui.Models;
+using Imc.Models;
 
 
 namespace Imc.Maui.ViewModels
@@ -42,7 +42,7 @@ namespace Imc.Maui.ViewModels
                     Imc = imc.ToString("F4");
                     EstadoNutricional = CalculadoraImc.ObtenerEstadoNutricional(imc);
                 }
-            }
+            } catch
             
             {
                 
