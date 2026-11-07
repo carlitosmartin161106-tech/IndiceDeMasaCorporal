@@ -1,2 +1,6 @@
-Tip Calculator es una aplicación .NET MAUI que te permite calcular la propina de un consumo compartido entre un numero de personas
+Imc es una aplicacion .NET Maui que calcula el indice
+
+de masa corporal de una persona y muestra su
+
+estado nutricional.
 
